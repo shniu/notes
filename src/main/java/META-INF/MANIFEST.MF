@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: com.digcredit.shniu.hadoop.WordCount
+
