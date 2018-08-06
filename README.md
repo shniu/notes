@@ -1,2 +1,3 @@
-# design-pattern
-设计模式的实际应用
+# notes
+
+读书笔记与代码实践
