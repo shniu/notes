@@ -34,3 +34,46 @@ EOSIO 软件引入了一个新的区块链架构设计，这种设计能垂直�
 ### 2.8 链间通信
 
 EOSIO 软件旨在促进链间通信。这通过使 Action 存在证明和 Action 顺序证明更加容易来实现的，这些证明与围绕 Action 传递设计的应用架构相结合，可以为应用程序开发人员隐藏链间通信和证明验证的细节，从而可以向开发人员提供高级抽象。
+
+## 3. 网络概述
+
+> Referenced to https://developers.eos.io/eosio-home/docs/network-overview
+
+- 简述
+
+EOSIO 网络是由一个去中心化的共识算法(DPoS), 一个网络资源管理系统，治理流程和使用网络的一系列激励组成。
+
+- DPoS
+
+- 提案
+
+- 激励
+
+- Staking resources
+
+EOSIO 区块链上，有3类资源需要被应用消费：
+  1. 带宽和日志存储
+  2. CPU
+  3. RAM
+  
+- Staking Consumption
+
+EOS.IO 软件允许每个帐户消耗一定百分比的可用容量，该容量与3天赌注合同中持有的令牌数量成比例。例如，如果 EOS.IO 区块链上的帐户持有根据该区块链可分配的总代币的1％，则该帐户有可能利用1％的状态存储容量。
+
+虽然可以委派网络和计算，但是应用程序状态的存储将要求应用程序开发者持有令牌或者放置它们，直到删除该状态。 如果状态永远不会被删除，那么令牌就会被有效地从循环中移除。
+
+- 治理
+
+---
+
+## EOSIO 高级特性引导
+
+### Full Scale Network
+
+全面的 EOSIO 网络有很多服务器组成（世界范围内可能有几千台），执行各种功能。
+
+EOSIO 网络在这里以层状同心圆的形式描述，其中最内层是 EOSIO 核心网络，封装在 EOSIO 接入网络中，而接入网络又由 EOSIO 消费者者的全球社区访问。
+
+![Full Scale Network](https://files.readme.io/81a9b0f-EOSIO-network-layered-diagram.png)
+
+
