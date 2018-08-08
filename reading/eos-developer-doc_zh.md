@@ -77,3 +77,24 @@ EOSIO 网络在这里以层状同心圆的形式描述，其中最内层是 EOSI
 ![Full Scale Network](https://files.readme.io/81a9b0f-EOSIO-network-layered-diagram.png)
 
 
+### BIOS Boot Sequence
+
+> Referenced to https://developers.eos.io/eosio-nodeos/docs/bios-boot-sequence
+
+#### Step 1 配置初始的 nodeos 节点集合
+
+在这个教程中，我们会启动一些 `nodeos` 节点，将他们指向彼此，并最终对一系列生产者进行投票。所有的 `nodeos` 节点将都跑在同一个服务器上。下面我们会准备候选节点
+
+- 1a. 给每一个 nodeos 创建配置和数据目录
+
+```
+mkdir ~/eosio_boot_seq_test
+for (( i = 1; i <= 5; i++ )); do for (( j = 1 ; j <=5 ; j++ )); do mkdir ~/eosio_boot_seq_test/accountnum$i$j; done; done
+```
+
+后面会在启动 nodeos 时使用到，结合参数  `--config-dir` and `--data-dir`。
+
+- 1b. 为 p2p 通信准备 ip 地址
+
+在启动区块生产者时，我们希望能够配置他们来指向彼此，从而能够进行 P2P 通信。如果设置全网状配置，则每个节点将指向所有其他节点。全网状网络将很快变得笨拙。 以下描述说明如何将节点指向其他节点以创建对等通信。 将此选项用于您选择作为对等项的节点，但建议不要对所有节点使用此节点，因为您的配置会爆炸式增长。
+
