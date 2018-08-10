@@ -20,7 +20,6 @@
 
 - [You don't know js 系列](https://github.com/addyosmani/es6-tools)
 
-里面包含了一系列文章：
   - "Up & Going"
   - "Scope & Closures"
   - "this & Object Prototypes"
