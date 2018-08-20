@@ -4,4 +4,4 @@
 
 ## Notes guide
 
-- [For the learning resources awesome](a.md)
+- [For the learning resources awesome](resource-awesome.md)
