@@ -142,95 +142,173 @@ int accept(int sockfd, void *addr, int *addrlen);
 ##### send() and recv()
 
 ```cpp
+int send(int sockfd, const void *msg, int len, int flags);
+
 int recv(int sockfd, void *buf, int len, unsigned int flags);
+```
+
+##### connect()
+
+```cpp
+#include <sys/types.h>
+#include <sys/socket.h>
+
+int connect(int sockfd, struct sockaddr *serv_addr, int addrlen);
 ```
 
 ### 一个完整点的例子
 
 ```cpp
 // client.cpp
-#include <cstdio>
-#include <cstdlib>
-#include <cerrno>
-#include <netdb.h>
-#include <sys/types.h>
-#include <netinet/in.h>
-#include <sys/socket.h>
-#include <unistd.h>
-#include <arpa/inet.h>
-#define MAXDATASIZE 1000
-
-using namespace std;
-
-int main(int argc, char** argv) {
-    if (argc < 5)
-        printf("Input format error\n");
-        return 0;
-    }
-
-    in_addr_t server_ip = inet_addr(argv[1]);
-    in_port_t server_port = atoi(argv[2]);
-    in_addr_t my_ip = inet_addr(argv[3]);
-    in_port_t my_port = atoi(argv[4]);
-}
+#include <cstdio>                                                                                                                    
+#include <sys/socket.h>                                                                                                              
+#include <netdb.h>                                                                                                                   
+#include <cstdlib>                                                                                                                   
+#include <arpa/inet.h>                                                                                                               
+#include <strings.h>                                                                                                                 
+#include <zconf.h>                                                                                                                   
+                                                                                                                                     
+#define MAXDATASIZE 1000                                                                                                             
+                                                                                                                                     
+namespace echo_client {                                                                                                              
+                                                                                                                                     
+    int open_clientfd(in_addr_t domain, in_addr_t port) {                                                                            
+        int client_fd;                                                                                                               
+                                                                                                                                     
+        if ((client_fd = socket(AF_INET, SOCK_STREAM, 0)) == -1) {                                                                   
+            printf("socket error");                                                                                                  
+            return -1;                                                                                                               
+        }                                                                                                                            
+                                                                                                                                     
+        // connect                                                                                                                   
+        struct sockaddr_in server_addr;                                                                                              
+        bzero((char *) &server_addr, sizeof(server_addr));                                                                           
+        server_addr.sin_family = AF_INET;                                                                                            
+        server_addr.sin_port = htons(port);                                                                                          
+        server_addr.sin_addr.s_addr = domain;                                                                                        
+        if (connect(client_fd, (struct sockaddr *) &server_addr, sizeof(struct sockaddr)) == -1) {                                   
+            printf("connect error");                                                                                                 
+            return -1;                                                                                                               
+        }                                                                                                                            
+                                                                                                                                     
+        printf("Connect server succeed!");                                                                                           
+                                                                                                                                     
+        int recvbytes;                                                                                                               
+        int sendbytes;                                                                                                               
+        int len;                                                                                                                     
+        char buf[MAXDATASIZE];                                                                                                       
+                                                                                                                                     
+        if ((recvbytes = static_cast<int>(recv(client_fd, buf, MAXDATASIZE, 0))) == -1) {                                            
+            printf("recv error");                                                                                                    
+            return -1;                                                                                                               
+        }                                                                                                                            
+                                                                                                                                     
+        buf[recvbytes] = '\0';                                                                                                       
+        printf("Received: %s", buf);                                                                                                 
+        close(client_fd);                                                                                                            
+        return 0;                                                                                                                    
+    }                                                                                                                                
+                                                                                                                                     
+    int main(int argc, char** argv) {                                                                                                
+        // Params valid                                                                                                              
+        if (argc < 3) {                                                                                                              
+            printf("* params not valid, must be provided the host and the port");                                                    
+            return -1;                                                                                                               
+        }                                                                                                                            
+                                                                                                                                     
+        // struct hostent * he = gethostbyname(*(argv + 2));                                                                         
+        in_addr_t domain = inet_addr(*(argv + 2));                                                                                   
+        auto port = static_cast<in_port_t>(atoi(*(argv + 3)));                                                                       
+                                                                                                                                     
+        return open_clientfd(domain, port);                                                                                          
+    }                                                                                                                                
+                                                                                                                                     
+}                                                                                                                                    
+                                                                                                                                     
 
 // server.cpp
-#include <cstdio>
 #include <cstdlib>
-#include <cerrno>
-#include <cstring>
+#include <cstdio>
 #include <sys/types.h>
-#include <netinet/in.h>
 #include <sys/socket.h>
-#include <sys/wait.h> 
+#include <sys/wait.h>
+#include <netinet/in.h>
+#include <strings.h>
+#include <string.h>
 #include <arpa/inet.h>
-#include <unistd.h>
-#define SERVPORT 3333   // 服务器监听端口号
-#define BACKLOG 10  // 最大同时连接请求数
-#define MAXDATASIZE 1000
+#include <zconf.h>
 
-int main(int argc, char** argv) {
-    int sock_fd;
-    struct sockaddr_in my_addr;
+#define SERVER_PORT 6666
 
-    if ((sock_fd = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
-        printf("new socket error");
-        exit(1);
-    }
+namespace echo_server {
 
-    int flag = 1;
-    setsockopt(sock_fd, SOL_SOCKET, SO_REUSEADDR, (char *)&flag, sizeof(flag));
-    my_addr.sin_family = AF_INET;
-    my_addr.sin_port = htons(SERVPORT);
-    my_addr.sin_addr.s_addr = INADDR_ANY;
-    bzero(&(my_addr.sin_zero), 8);
-    if (bind(sock_fd, (struct sockaddr *)&my_addr, sizeof(struct sockaddr)) == -1) {
-        printf("bind socket error");
-        exit(1);
-    }
+    int open_listenfd() {
+        // fd
+        int listenfd;
 
-    if (listen(sock_fd, BACKLOG) == -1) {
-        printf("listen socket error");
-        exit(1);
-    }
+        if ((listenfd = socket(AF_INET, SOCK_STREAM, 0)) == -1) {
+            printf("* socket error");
+            return -1;
+        }
+        printf("* listen fd: %d\n", listenfd);
 
-    // client socket info
-    int client_fd;
-    struct sockaddr_in remote_addr;
-    while (1) {
-        int sin_size = sizeof(struct sockaddr_in);
-        if ((client_fd = accept(sock_fd, (struct sockaddr *)&remote_addr, (socklen_t*)&sin_size)) == -1) {
-            printf("accpet socket error");
-            continue;
+        // sockaddr_in
+        struct sockaddr_in my_addr;
+        my_addr.sin_family = AF_INET;
+        my_addr.sin_port = htons(SERVER_PORT);
+        my_addr.sin_addr.s_addr = INADDR_ANY;
+        bzero(&(my_addr.sin_zero), 8);
+
+        // bind
+        if (bind(listenfd, (struct sockaddr *) &my_addr, sizeof(struct sockaddr)) == -1) {
+            printf("* bind error");
+            return -1;
         }
 
-        printf("received a connection from %s:%u\n", inet_ntoa(remote_addr.sin_addr), ntohs(remote_addr.sin_port));
+        // listen
+        if (listen(listenfd, 20) == -1) {
+            printf("* listen error");
+            return -1;
+        }
 
-        // fork
+        printf("* Echo server listen port: %d\n", SERVER_PORT);
 
-        close(client_fd);
+        int sin_size;
+        int client_fd;
+        struct sockaddr_in remote_addr;
+
+        while (1) {
+            // accept
+            sin_size = sizeof(struct sockaddr_in);
+            if ((client_fd = accept(listenfd, (sockaddr *) &remote_addr, (socklen_t *)&sin_size)) == -1) {
+                printf("* accept error");
+                continue;
+            }
+
+            printf("* received a connection from %s:%d\n", inet_ntoa(remote_addr.sin_addr), ntohs(remote_addr.sin_port));
+
+            // child process
+            if (!fork()) {
+                const char *msg = "Hello, i'm echo server.";
+                if (send(client_fd, msg, strlen(msg), 0) == -1) {
+                    printf("* send error");
+                }
+                close(client_fd);
+                exit(0);
+            }
+
+            close(client_fd);
+            while (waitpid(-1, NULL, WNOHANG) > 0);
+        }
+
+        return listenfd;
+    }
+
+    int main(int argc, char** argv) {
+        return open_listenfd();
     }
 }
+
 ```
 
 ### 延伸阅读
@@ -238,3 +316,5 @@ int main(int argc, char** argv) {
 - [SOCKETS - SERVER & CLIENT - 2018 C++](http://www.bogotobogo.com/cplusplus/sockets_server_client.php)
 
 对 Scoket 编程做了深入的总结，包括：TCP, UDP, Boost.Asio, Socket 的底层接口, Blocking socket and non-blocking socket等
+
+- [](https://www.cnblogs.com/L-hq815/archive/2012/07/09/2583043.html)
