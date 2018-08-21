@@ -43,6 +43,8 @@ Docker 相关的一些资源清单。
 - [Python / C++ 11 Solutions of All LeetCode Questions](https://github.com/kamyu104/LeetCode)
 - [free-programming-books-zh](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books-zh.md)
 
+项目中收集了大量的电子资料，很全很优秀。
+
 #### For C/C++
 
 - [Tiny web server](https://gitlab.com/eidheim/Simple-Web-Server/tree/master)
