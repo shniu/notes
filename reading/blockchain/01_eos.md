@@ -97,7 +97,7 @@ cleos push action ex.hello hi '["ex.user1", "ex.user2"]' -p ex.user1
 
 [EOS权限模型机制分析](https://blog.csdn.net/itleaks/article/details/80422288)
 
-![inline action](https://img-blog.csdn.net/2018060316163265)
+![inline action](https://github.com/shniu/notes/raw/master/img/eos-inline-action.jpg)
 
 ### Interesting case
 
