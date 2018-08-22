@@ -87,6 +87,18 @@ cleos set account permission ex.user1 active '{"threshold": 1,"keys": [],"accoun
 cleos push action ex.hello hi '["ex.user1", "ex.user2"]' -p ex.user1
 ```
 
+- Ref
+
+[Permission issue for action in contract #3013](https://github.com/EOSIO/eos/issues/3013)
+
+[EOS智能合约开发实践之合约调用合约(inline action)](https://blog.csdn.net/itleaks/article/details/80535318)
+
+[EOS保留权限eosio.code深度解读](https://blog.csdn.net/itleaks/article/details/80557560)
+
+[EOS权限模型机制分析](https://blog.csdn.net/itleaks/article/details/80422288)
+
+![inline action](https://img-blog.csdn.net/2018060316163265)
+
 ### Interesting case
 
 #### 1. DexChain
