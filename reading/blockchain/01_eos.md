@@ -108,6 +108,12 @@ cleos push action ex.hello hi '["ex.user1", "ex.user2"]' -p ex.user1
 - [黄皮书](https://github.com/DexChain/eos-dexchain/blob/master/YellowPaper.md)
 - [Github](https://github.com/DexChain/eos-dexchain)
 
+#### 2. eos-airdrop
+
+- [eos-airdrop](https://github.com/itleaks/eos-airdrop)
+
+A tool to airdrop token or issue a ad on EOS blockchain, EOS空投和广告工具
+
 ### Analysis
 
 #### 1. 在 EOS 区块链上开发我的第一个 dapp
