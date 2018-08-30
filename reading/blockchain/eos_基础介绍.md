@@ -87,6 +87,10 @@ cleos set account permission ex.user1 active '{"threshold": 1,"keys": [],"accoun
 cleos push action ex.hello hi '["ex.user1", "ex.user2"]' -p ex.user1
 ```
 
+#### 2. 合约与db交互
+
+[EOS技术研究：合约与数据库交互](https://www.cnblogs.com/Evsward/p/multi_index.html)
+
 - Ref
 
 [Permission issue for action in contract #3013](https://github.com/EOSIO/eos/issues/3013)
