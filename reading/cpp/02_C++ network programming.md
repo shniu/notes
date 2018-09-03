@@ -314,6 +314,10 @@ namespace echo_server {
 
 ### 延伸阅读
 
+- [Book files for https://theboostcpplibraries.com/](https://github.com/BorisSchaeling/theboostcpplibraries)
+
+
+
 - [SOCKETS - SERVER & CLIENT - 2018 C++](http://www.bogotobogo.com/cplusplus/sockets_server_client.php)
 
 对 Scoket 编程做了深入的总结，包括：TCP, UDP, Boost.Asio, Socket 的底层接口, Blocking socket and non-blocking socket等
@@ -321,6 +325,12 @@ namespace echo_server {
 - [C++ Socket 编程](https://www.cnblogs.com/L-hq815/archive/2012/07/09/2583043.html)
 
 ### 延伸项目
+
+- libevent
+
+- libuv
+
+- Java Netty
 
 - [cpp-netlib](https://github.com/cpp-netlib/cpp-netlib)
 
