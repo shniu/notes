@@ -319,3 +319,21 @@ namespace echo_server {
 对 Scoket 编程做了深入的总结，包括：TCP, UDP, Boost.Asio, Socket 的底层接口, Blocking socket and non-blocking socket等
 
 - [C++ Socket 编程](https://www.cnblogs.com/L-hq815/archive/2012/07/09/2583043.html)
+
+### 延伸项目
+
+- [cpp-netlib](https://github.com/cpp-netlib/cpp-netlib)
+
+The C++ Network Library Project -- cross-platform, standards compliant networking library. http://cpp-netlib.org/
+
+- [libf2f](https://github.com/RJ/libf2f)
+
+Library for building p2p networks, C++ boost/asio
+
+- [Breep](https://github.com/Organic-Code/Breep)
+
+C++ peer to peer library, built on the top of boost
+
+- [simple-blockchain](https://github.com/tko22/simple-blockchain)
+
+My implementation of a blockchain in C++ - Peer-to-Peer network, SHA-256, Merkle Trees, Mining, etc.
