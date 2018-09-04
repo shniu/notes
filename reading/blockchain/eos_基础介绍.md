@@ -103,6 +103,18 @@ cleos push action ex.hello hi '["ex.user1", "ex.user2"]' -p ex.user1
 
 ![inline action](https://github.com/shniu/notes/raw/master/img/eos-inline-action.jpg)
 
+#### 3. eosio.token 合约的解读
+
+[understanding-the-eosio-token-contract](https://medium.com/coinmonks/understanding-the-eosio-token-contract-87466b9fdca9)
+
+深入浅出的讲解
+
+#### 4. 去中心化的消息队列实现
+
+[how-to-secure-messages-on-eos](https://medium.com/coinmonks/how-to-secure-messages-on-eos-ebb869a459ea)
+
+You may be wondering what if I want to encrypt messages on blockchain, specifically, on EOS?
+
 ### Interesting case
 
 #### 1. DexChain
