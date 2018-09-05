@@ -40,7 +40,16 @@
 
 #### 对 C++ 的基本认识
 
-C++ 的发展历史，决定了 C++ 是一门什么样的语言
+C++ 的发展历史，决定了 C++ 是一门什么样的语言. C++ 难学但易用，有坑但是有规避的方法。
+
+可以认为 C++ 是一个语言联邦，包含了多重泛型的编程语言，支持面向过程的C、支持OOP、支持functional、支持GP、支持元编程。所以可以将 C++ 理解为一个联邦语言，其下拥有几个次语言，每个次语言都有自己的规则，都倾向于简单、直观易懂。
+
+- C. Include: Blocks, Statements, Preprocessor, Built-in data types, arrays, Pointors etc.
+- OOP C++. Class include: Constrtor, Destrtor, 封装, 继承, 多态, Virtual function etc.
+- Template C++. C++ 的 GP
+- STL. STL is a template library. Include: containers, iterators, algorithms, function objects etc. STL 有自己的办事方式，当与 STL 一起工作时, 要遵守它的规约
+
+**C++ 的高效编程守则视情况而定，取决于使用 C++ 的哪一步分**
 
 ## 阅读材料
 
