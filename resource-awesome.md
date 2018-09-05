@@ -1,6 +1,6 @@
 
 
-### Github 优秀项目汇总
+## Github 优秀项目汇总
 
 将 Github 上优秀的项目汇总在一起，方便学习及查阅，温故知新而知新。
 
@@ -45,7 +45,19 @@ Docker 相关的一些资源清单。
 
 项目中收集了大量的电子资料，很全很优秀。
 
-#### For C/C++
+### C/C++
+
+- [awesome cpp](https://github.com/fffaraz/awesome-cpp)
+
+A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things. Inspired by awesome-... stuff.
+
+- [handy](https://github.com/yedf/handy)
+
+简洁易用的C++11网络库 / 支持单机千万并发连接 
+
+- [The Boost C++ Libraries](https://theboostcpplibraries.com/)
+
+The Boost C++ Libraries
 
 - [Tiny web server](https://gitlab.com/eidheim/Simple-Web-Server/tree/master)
 
