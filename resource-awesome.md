@@ -75,6 +75,9 @@ A very simple, fast, multithreaded, platform independent HTTP and HTTPS server a
 
 - [对开发者有用的英文网站合集，建议收藏](https://blog.csdn.net/ejinxian/article/details/74080639)
 
+### Blog
+
+* [Building Scalable Real-Time Internet Technology](https://mrotaru.wordpress.com/)
 
 ### 优秀代码项目
 
