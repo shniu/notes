@@ -75,7 +75,11 @@
 
 [聊聊Linux 五种IO模型](https://www.jianshu.com/p/486b0965c296), 讲的比较清楚了
 
-[IO多路复用原理剖析](https://juejin.im/post/59f9c6d66fb9a0450e75713f), 这篇文章 【todo】
+#### IO 多路复用
+
+I / O 多路复用就是通过一种机制，一个进程可以监视多个描述符，一旦某个描述符就绪（一般是读就绪或者写就绪），能够通知程序进行相应的读写操作。但select，pselect，poll，epoll本质上都是同步I/O, 因为他们都需要在读写事件就绪后自己负责进行读写，也就是说这个读写过程是阻塞的.
+
+- [IO多路复用原理剖析](https://juejin.im/post/59f9c6d66fb9a0450e75713f), 这篇文章 【todo】
 
 ### C10K & C10M
 
@@ -101,9 +105,6 @@ The C10M problem relates to the classic C10K Internet scalability problem, which
 - [Fast C10M: MigratoryData running on Zing JVM achieves near 1 Gbps messaging to 10 million concurrent users with 15 millisecond consistent latency
 ](https://mrotaru.wordpress.com/2016/01/20/migratorydata-makes-its-c10m-scalability-record-more-robust-with-zing-jvm-achieve-near-1-gbps-messaging-to-10-million-concurrent-users-with-only-15-milliseconds-consistent-latency/)
 
-### I/O 多路复用
-
-I / O 多路复用就是通过一种机制，一个进程可以监视多个描述符，一旦某个描述符就绪（一般是读就绪或者写就绪），能够通知程序进行相应的读写操作。但select，pselect，poll，epoll本质上都是同步I/O, 因为他们都需要在读写事件就绪后自己负责进行读写，也就是说这个读写过程是阻塞的.
 
 ## Ref
 
