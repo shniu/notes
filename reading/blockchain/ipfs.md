@@ -33,6 +33,14 @@ A peer-to-peer hypermedia protocol to make the web faster, safer, and more open.
 
 关于 IPFS 一篇深入浅出的介绍文章，中文翻译的在这里 http://www.bitmixc.com/application/qklyy/2314.html
 
+6. 基于 IPFS 构建的一些项目
+
+- [ipfs wiki](http://ipfser.org/2017/12/19/a8/)
+
+```
+git clone git@github.com:daijiale/ipfs-wiki-system.git
+```
+
 #### FileCoin
 
 - [FileCoin 2018 Q1 Q2 update and 开发计划](https://filecoin.io/blog/update-2018-q1-q2/)
