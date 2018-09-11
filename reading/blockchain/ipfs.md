@@ -2,6 +2,7 @@
 > ipfs 官网： https://ipfs.io/
 
 > ipfs doc: https://ipfs.io/docs/
+https://docs.ipfs.io/introduction/install/
 
 > ipfs Github: https://github.com/ipfs/ipfs
 
@@ -27,6 +28,10 @@ A peer-to-peer hypermedia protocol to make the web faster, safer, and more open.
 这个是 IPFS 中使用的身份系统的 NodeId 生成算法
 
 4. [ipfs 中国社区](http://ipfser.org/)
+
+5. [An Introduction to IPFS](https://medium.com/@ConsenSys/an-introduction-to-ipfs-9bba4860abd0)
+
+关于 IPFS 一篇深入浅出的介绍文章，中文翻译的在这里 http://www.bitmixc.com/application/qklyy/2314.html
 
 #### FileCoin
 
