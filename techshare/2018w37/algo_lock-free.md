@@ -9,6 +9,10 @@
 - lock free 的关键技术和解决问题的方式
 - lock free 的实践，分别研究一下在 Java/ C++ / Golang 中的 lock free 实现
 
+### Lock free data structures 
+
+> Lock-free data structures guarantee the progress of at least one thread when executing mutlithreaded procedures, thereby helping you avoid deadlock. 
+
 
 ## Lock Free 相关的资料
 
