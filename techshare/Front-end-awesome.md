@@ -78,3 +78,9 @@ HTTP 2.0 是未来的发展方向，一定要去了解一下。
 - [An Introduction to WebSockets](http://blog.teamtreehouse.com/an-introduction-to-websockets)
 
 Websocket 的简单教程
+
+### 一些很棒的类库
+
+- [y.js](https://github.com/y-js/yjs)
+
+A framework for real-time p2p shared editing on any data. p2p js 库
