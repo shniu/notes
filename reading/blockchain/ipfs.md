@@ -59,6 +59,16 @@ Ubuntu：著名的linux发行版本Ubuntu正在计算把发行版本转移到IPF
 火狐浏览器：支持ipfs在内的分布式协议
 ```
 
+忍不住放一些项目的连接地址：
+
+- [peerpad](https://github.com/ipfs-shipyard/peer-pad)
+
+PeerPad is a decentralized editor that allows concurrent writing of text. Besides making live changes to a given document, it allows read-only nodes to follow the changes in real-time. It also allows you to publish a self-contained snapshot of the document to IPFS.
+
+- [OpenBazaar 开放宝](https://github.com/openbazaar)
+
+开放宝市是一个去中心化的电商。她的用户使用多种与比特币类似的加密互联网货币，其灵感来自一个匿名组织的DarkMarket项目。 与依赖中央服务器交换数据的商业电商不同，开放宝市的服务器存在于用户们的对等网络中，无任何监管中心，无任何手续费用。他们的口号是“买卖自由/Buy and Sell Freely”
+
 #### FileCoin
 
 - [FileCoin 2018 Q1 Q2 update and 开发计划](https://filecoin.io/blog/update-2018-q1-q2/)
