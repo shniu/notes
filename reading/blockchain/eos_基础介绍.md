@@ -115,6 +115,12 @@ cleos push action ex.hello hi '["ex.user1", "ex.user2"]' -p ex.user1
 
 You may be wondering what if I want to encrypt messages on blockchain, specifically, on EOS?
 
+#### 5. eos 加密数据的例子
+
+https://github.com/angelol/eos-encryption-demo
+
+就是使用自己的公钥或者别人的公钥加密之后，放在链上，然后只能自己或者对方看到明文是什么，在 client 端就可以做了。
+
 ### Interesting case
 
 #### 1. DexChain
