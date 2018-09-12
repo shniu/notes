@@ -11,6 +11,8 @@
 
 ### 先来回顾一下并发编程的东西
 
+在多线程中，
+
 - 线程安全
 
 ### Lock free data structures 
