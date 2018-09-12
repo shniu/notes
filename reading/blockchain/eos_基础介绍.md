@@ -135,6 +135,12 @@ https://github.com/angelol/eos-demos
 - ipfs 的例子，将数据存储到ipfs，hash上链
 - 将合约里的数据迁移到 mongo 中
 
+#### 8. eosameswaps
+
+A decentralized, trustless, EOS account exchange dApp. 
+
+https://github.com/StarryJapanNight/eosnameswaps
+
 ### Interesting case
 
 #### 1. DexChain
@@ -149,6 +155,20 @@ https://github.com/angelol/eos-demos
 - [eos-airdrop](https://github.com/itleaks/eos-airdrop)
 
 A tool to airdrop token or issue a ad on EOS blockchain, EOS空投和广告工具
+
+#### 3. https://github.com/angelol/simpleos  EOS Blockchain Interface & Wallet
+
+SimplEOS is a wallet made solely for the EOS ecosystem and fully integrated with all features available in the EOS.IO software.
+
+#### 4. eospy library
+
+https://github.com/eosnewyork/eospy
+
+#### 5. eosjs-cluster
+
+https://github.com/DEXEOS/eosjs-cluster
+
+eosjs-cluster can be used same way as using eosjs library. When there happens a problem with an endpoint, eosjs-cluster automatically calls the same request to the next endpoint.
 
 ### Analysis
 
