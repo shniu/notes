@@ -127,6 +127,13 @@ https://github.com/angelol/smart_account_creator
 
 将创建账号的操作放在智能合约里了，防止付钱之后不给创建账号的风险，去中心化的信任，合约里创建账号是非常值得学习的。
 
+#### 7. eos 的一些例子：ipfs 和 mongo
+
+https://github.com/angelol/eos-demos
+
+- ipfs 的例子，将数据存储到ipfs，hash上链
+- 将合约里的数据迁移到 mongo 中
+
 ### Interesting case
 
 #### 1. DexChain
