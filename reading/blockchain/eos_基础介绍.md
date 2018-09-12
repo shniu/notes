@@ -121,6 +121,12 @@ https://github.com/angelol/eos-encryption-demo
 
 就是使用自己的公钥或者别人的公钥加密之后，放在链上，然后只能自己或者对方看到明文是什么，在 client 端就可以做了。
 
+#### 6. eos 创建账号
+
+https://github.com/angelol/smart_account_creator
+
+将创建账号的操作放在智能合约里了，防止付钱之后不给创建账号的风险，去中心化的信任，合约里创建账号是非常值得学习的。
+
 ### Interesting case
 
 #### 1. DexChain
