@@ -7,6 +7,8 @@
 
 ## EOS
 
+> https://medium.com/eosio/eosio-dawn-3-0-now-available-49a3b99242d7
+
 ### Key tech
 
 #### 1. inline action
@@ -140,6 +142,10 @@ https://github.com/angelol/eos-demos
 A decentralized, trustless, EOS account exchange dApp. 
 
 https://github.com/StarryJapanNight/eosnameswaps
+
+#### 9. eosio.forum
+
+https://github.com/eoscanada/eosio.forum
 
 ### Interesting case
 
