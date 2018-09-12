@@ -133,7 +133,7 @@ https://github.com/angelol/smart_account_creator
 https://github.com/angelol/eos-demos
 
 - ipfs 的例子，将数据存储到ipfs，hash上链
-- 将合约里的数据迁移到 mongo 中
+- 将合约里的数据迁移到 mongo 中, 同样的项目还有 https://github.com/EOSpace/eos-sync，快速搭建非常方便
 
 #### 8. eosameswaps
 
