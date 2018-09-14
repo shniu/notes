@@ -5,6 +5,10 @@
 - [ ] deadlock / [livelock](https://en.wikipedia.org/wiki/Deadlock#Livelock)
 - [ ] 重量级锁 / 轻量级锁 / 偏斜锁 等
 - [ ]  memory barriers
+- [ ] Double-checked Locking
+- [ ] 内存模型：顺序一致性
+
+---
 
 在编写并发程序的时候，如何正确有效保护共享数据一直都是一个要解决的问题，而基本的解决手段就是同步，也就是说在遇到多个线程（或进程）竞争共享数据的时候，使用同步原子性操作进行串行，从而保证对数据的更改是可控的、正确的、有效的。同步又有阻塞同步和非阻塞同步两类。
 
@@ -132,7 +136,9 @@ Lock Free 都是在有特定需求的场景中使用的设计，不会在一个�
 
 #### C++
 
-[Boost.lockfree](https://www.boost.org/doc/libs/1_60_0/doc/html/lockfree.html) 是 C++ 中 lock free 的实现
+[Boost.lockfree](https://www.boost.org/doc/libs/1_60_0/doc/html/lockfree.html) 是 C++ 中 lock free 的实现。
+
+
 
 ### 实例
 
@@ -163,3 +169,7 @@ A collection of resources on wait-free and lock-free programming
 - [ConcurrentStack 的实现](https://referencesource.microsoft.com/#mscorlib/system/Collections/Concurrent/ConcurrentStack.cs)
 
 实现基于 CAS Loop， allocate a new node on every push. This avoids having to worry about potential ABA issues, since the CLR GC ensures that a memory address cannot be reused before all references to it have died.
+
+- [设计不使用互斥锁的并发数据结构](https://www.ibm.com/developerworks/cn/aix/library/au-multithreaded_structures2/index.html)
+
+- [Writing Lock-Free Code: A Corrected Queue](http://www.drdobbs.com/parallel/writing-lock-free-code-a-corrected-queue/210604448?pgno=2)
