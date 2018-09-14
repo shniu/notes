@@ -1,4 +1,11 @@
 
+#### TODO
+- [ ] spinning lock
+- [ ] semaphone
+- [ ] deadlock / [livelock](https://en.wikipedia.org/wiki/Deadlock#Livelock)
+- [ ] 重量级锁 / 轻量级锁 / 偏斜锁 等
+- [ ]  memory barriers
+
 在编写并发程序的时候，如何正确有效保护共享数据一直都是一个要解决的问题，而基本的解决手段就是同步，也就是说在遇到多个线程（或进程）竞争共享数据的时候，使用同步原子性操作进行串行，从而保证对数据的更改是可控的、正确的、有效的。同步又有阻塞同步和非阻塞同步两类。
 
 我们在编写多线程程序的过程中，第一个需要保证的就是线程安全，所谓线程安全就是在多线程环境下，可以正确有效的处理共享数据、可修改的状态；如果多线程之间不存在竞争条件，那就不存在线程安全的问题。往往我们使用最多也是最具有暴力美学的就是同步块或者同步方法，比如 Java 中的 `synchronized`，C++ 中的 `mutex` 等。
@@ -27,7 +34,7 @@
 4. 自旋锁 spinning lock
 ```
 
-## [on-Blocking Synchronization](https://en.wikipedia.org/wiki/Non-blocking_algorithm)
+## [Non-Blocking Synchronization](https://en.wikipedia.org/wiki/Non-blocking_algorithm)
 
 当前线程无法获取锁的时候，并不会被阻塞，而是原地等待，直到获取锁，这期间并不会发生线程的上下文切换。比较流行的非阻塞同步算法有：
 
@@ -103,7 +110,9 @@ void LockFreeStack::Push(Node* newHead)
 }
 ```
 
-- lock free 的实践，分别研究一下在 Java/ C++ / Golang 中的 lock free 实现
+- CAS 容易引发的问题
+
+ABA 问题是 CAS 有可能引发的问题，一般解决的办法是使用 double-length CAS，就是加上一个 counter, 每当对值做了修改就对 counter +1; ABA 问题其实和“掉包”是一样的，在系统中可能会引发一些问题。
 
 ### Lock free data structures 
 
@@ -115,9 +124,25 @@ Lock Free 都是在有特定需求的场景中使用的设计，不会在一个�
 
 ### lock free 在不同编程语言中的实现
 
+> lock free 的实践，分别研究一下在 Java/ C++ / Golang 中的 lock free 实现
+
 #### Java
 
 在 Java 中提供了一个 [concurrent atomic](https://docs.oracle.com/javase/10/docs/api/java/util/concurrent/atomic/package-summary.html) 的 package，里面的实现有 `AtomicInteger`, `AtomicLong` 等很多原子性操作，他的底层实现是基于 CAS Loop 的方式做的。
+
+#### C++
+
+[Boost.lockfree](https://www.boost.org/doc/libs/1_60_0/doc/html/lockfree.html) 是 C++ 中 lock free 的实现
+
+### 实例
+
+### lock free queue
+
+// todo
+
+### lock free stack
+
+// todo
 
 ## 总结
 
@@ -137,4 +162,4 @@ A collection of resources on wait-free and lock-free programming
 - [concurrencyfreaks lock free](https://concurrencyfreaks.blogspot.com/search?q=lock+free)
 - [ConcurrentStack 的实现](https://referencesource.microsoft.com/#mscorlib/system/Collections/Concurrent/ConcurrentStack.cs)
 
-实现基于 CAS Loop 
+实现基于 CAS Loop， allocate a new node on every push. This avoids having to worry about potential ABA issues, since the CLR GC ensures that a memory address cannot be reused before all references to it have died.
