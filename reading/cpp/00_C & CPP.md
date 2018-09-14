@@ -56,3 +56,7 @@ C++ 的发展历史，决定了 C++ 是一门什么样的语言. C++ 难学但�
 - [C programming language features , advantages and disadvantages](https://www.online-sciences.com/programming/c-programming-language-features-advantages-and-disadvantages/)
 
 - [C++的坑真的多吗？](https://coolshell.cn/articles/7992.html)
+
+- [C++ 的几个基本原理和技术](https://liam0205.me/2017/04/09/Foundations-of-Cpp/)hen
+
+很清楚的讲述了C++里的几个基础技术：内存和对象、编译时运算、容器、拷贝和移动、RAII等
