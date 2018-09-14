@@ -173,3 +173,7 @@ A collection of resources on wait-free and lock-free programming
 - [设计不使用互斥锁的并发数据结构](https://www.ibm.com/developerworks/cn/aix/library/au-multithreaded_structures2/index.html)
 
 - [Writing Lock-Free Code: A Corrected Queue](http://www.drdobbs.com/parallel/writing-lock-free-code-a-corrected-queue/210604448?pgno=2)
+
+- [An Introduction to Lock-Free Programming](http://preshing.com/20120612/an-introduction-to-lock-free-programming/)
+
+- [并发编程系列的文章](http://www.gotw.ca/publications/)
