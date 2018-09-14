@@ -330,6 +330,12 @@ namespace echo_server {
 
 - libuv
 
+- boost.asio
+
+- [qihuoo360 evpp](https://github.com/Qihoo360/evpp/blob/master/readme_cn.md)
+
+- [muduo](https://github.com/chenshuo/muduo)
+
 - Java Netty
 
 - [cpp-netlib](https://github.com/cpp-netlib/cpp-netlib)
