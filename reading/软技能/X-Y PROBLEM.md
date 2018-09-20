@@ -67,8 +67,8 @@ A2) 用rsync啊，你妹！
 
 ---
 
-Ref: https://coolshell.cn/articles/10804.html
-Ref: http://xyproblem.info/
-Ref: http://mywiki.wooledge.org/XyProblem
-Ref: https://meta.stackexchange.com/questions/66377/what-is-the-xy-problem
+- Ref: https://coolshell.cn/articles/10804.html
+- Ref: http://xyproblem.info/
+- Ref: http://mywiki.wooledge.org/XyProblem
+- Ref: https://meta.stackexchange.com/questions/66377/what-is-the-xy-problem
 
