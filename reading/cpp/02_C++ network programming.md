@@ -355,3 +355,5 @@ C++ peer to peer library, built on the top of boost
 - [simple-blockchain](https://github.com/tko22/simple-blockchain)
 
 My implementation of a blockchain in C++ - Peer-to-Peer network, SHA-256, Merkle Trees, Mining, etc.
+
+- [linux上的一个简单的多人聊天室](https://www.oschina.net/code/snippet_128508_4114)
