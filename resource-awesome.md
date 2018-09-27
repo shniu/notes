@@ -10,6 +10,7 @@
 | ------ | ------ | ------ | ------ |
 | [如何使用 C++ 编写计算机操作系统](https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System) | [x] todo | How to Make a Computer Operating System in C++，[gitbooks address](https://samypesse.gitbooks.io/how-to-create-an-operating-system/content/) | 理论上来讲是一个很好的资源 |
 | [How to create an OS from scratch](https://github.com/cfenollosa/os-tutorial) | [x] todo | | |
+| [ops](https://www.ops-class.org/) | [√] doing |  |  |
 
 ---
 
