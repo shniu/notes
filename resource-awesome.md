@@ -98,3 +98,18 @@ DDD 的经典书籍, 结合真实的项目和应用案例，阐述了如何将 D
 - DevOps相关，[凤凰项目, 一个IT运维的传奇故事](https://e.jd.com/30410303.html)
 - [All Ebooks about DevOps with docker or kubernetes](https://thenewstack.io/ebooks)
 - [Linux Network Administrators Guide](http://www.tldp.org/LDP/nag2/nag2.pdf)
+
+
+--- 
+
+将资源的汇总改造成其他方式，使用新的知识图谱的方式进行知识管理
+
+### 基本功 - 操作系统
+
+| 资源 | 状态 | 简单描述 | 备注 |
+| ------ | ------ | ------ | ------ |
+| [如何使用 C++ 编写计算机操作系统](https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System) | [x] todo | How to Make a Computer Operating System in C++，[gitbooks address](https://samypesse.gitbooks.io/how-to-create-an-operating-system/content/) | 理论上来讲是一个很好的资源 |
+| [How to create an OS from scratch](https://github.com/cfenollosa/os-tutorial) | | | |
+
+
+
