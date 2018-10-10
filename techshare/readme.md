@@ -5,7 +5,7 @@
 
 #### 算法与数据结构
 
-- [algo_20180920_关于无锁数据结构和算法设计](https://github.com/shniu/notes/blob/master/techshare/2018w37/algo_lock-free.md)
+- [algo_20180920_关于无锁数据结构和算法设计](https://github.com/shniu/notes/blob/master/techshare/algo/algo_lock-free.md)
 
 从并发编程的角度出发，从简单到复杂的方式分析了有锁到无锁的过程，以及每种锁的适用场景
 
