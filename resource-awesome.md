@@ -93,6 +93,8 @@ A very simple, fast, multithreaded, platform independent HTTP and HTTPS server a
 
 * [Building Scalable Real-Time Internet Technology](https://mrotaru.wordpress.com/)
 
+- [tartanllama blog - a C++ blog](https://blog.tartanllama.xyz/)
+
 ### 优秀代码项目
 
 - [ModelMapper](https://github.com/modelmapper/modelmapper/)
