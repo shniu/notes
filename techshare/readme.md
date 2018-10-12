@@ -5,11 +5,11 @@
 
 #### 算法与数据结构
 
-- [algo_20180920_关于无锁数据结构和算法设计](algo/algo_lock-free.md)
+- [algo_20180920_关于无锁数据结构和算法设计](algo/0005_lock-free-overview.md)
 
 从并发编程的角度出发，从简单到复杂的方式分析了有锁到无锁的过程，以及每种锁的适用场景
 
-- 算法 - 默克尔树(Merkle Tree)算法
+- [algo_20181001_hash table in action](algo/0004_hash_table_in_action.md)
 
 #### 计算机网络
 
