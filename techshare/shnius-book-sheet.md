@@ -44,6 +44,8 @@
 
 主要关于各种技术，没有优劣派系之争，技术是相通的
 
+- [技术类借鉴](http://www.iocoder.cn/Architecture/books-recommended/?github）
+
 - [ ] Unix 网络编程 卷1
 
 - [ ] Unix 编程艺术
