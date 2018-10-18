@@ -1,6 +1,12 @@
 
 ## Share to my team
 
+### 2018-10-17
+
+- [sofa-boot](https://github.com/alipay/sofa-boot)
+
+sofa-boot 是基于 spring boot 做了功能增强并完全兼容 spring boot，引入了启动检测、类隔离、模块化开发等, 蚂蚁金服 10 年之久的技术沉淀，非常值得深入探索。
+
 ### 2018-10-13
 
 - [Java 应用架构设计：模块化模式与OSGI](https://pan.baidu.com/s/13KtO6WTgrzq_eIEeorZziQ)
