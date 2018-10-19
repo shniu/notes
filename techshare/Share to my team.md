@@ -5,7 +5,9 @@
 
 - [深度剖析：如何实现一个 Virtual DOM 算法](https://github.com/livoras/blog/issues/13)
 
+### 2018-10-18
 
+- [成长日记](https://mp.weixin.qq.com/s/KRjKlDEHJWcK1-oXf2k_8A)
 
 ### 2018-10-17
 
