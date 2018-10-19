@@ -1,6 +1,10 @@
 
 ## Share to my team
 
+### 2018-10-20
+
+- [浏览器的工作原理：新式网络浏览器幕后揭秘](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
+
 ### 2018-10-19
 
 - [深度剖析：如何实现一个 Virtual DOM 算法](https://github.com/livoras/blog/issues/13)
