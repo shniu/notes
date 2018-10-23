@@ -1,5 +1,5 @@
 
-## Sort Algorithm
+## Sort Algorithmic
 
 // todo
 
