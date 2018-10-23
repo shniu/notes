@@ -15,7 +15,7 @@
 // 9. Java 中的动态代理
 // 10. Java 中的集合操作
 // 11. Java 中的接口和抽象编程
-// 12. Java 中的设计模式
+// 12. Java 中的设计模式，Ref: http://blog.didispace.com/spring-design-partern/
 ```
 
 
