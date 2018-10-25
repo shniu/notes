@@ -3,7 +3,8 @@
  
 
 项目地址：http://github.com/shniu/strawberry
-项目 wiki: http://github.com/shniu/strawberry/wiki
+
+项目 WIKI: http://github.com/shniu/strawberry/wiki
 
 My Web Framework's Target:
 
