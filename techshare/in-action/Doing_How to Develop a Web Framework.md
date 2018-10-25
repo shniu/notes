@@ -15,6 +15,11 @@ My Web Framework's Target:
 #### Java
 
 - [Play web framework](https://www.playframework.com/)
+- [xitrum](https://xitrum-framework.github.io/)
+- [Sinetja](https://github.com/sinetja/sinetja)
+- [GWT – Google Web Toolkit](http://www.gwtproject.org/)
+- [Grails](https://grails.org/)
+- [vertx.io](https://vertx.io/docs/)
 
 #### Golang
 
