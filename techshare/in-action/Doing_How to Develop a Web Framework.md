@@ -24,6 +24,7 @@ My Web Framework's Target:
 - [Grails](https://grails.org/)
 - [vertx.io](https://vertx.io/docs/)
 - [Smart Framework](https://gitee.com/huangyong/smart-framework)
+- [轻量级 Web 框架 Smart Framework 的实现](https://my.oschina.net/huangyong/blog/158546)
 
 
 #### Golang
