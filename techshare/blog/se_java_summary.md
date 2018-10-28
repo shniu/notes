@@ -30,9 +30,19 @@
 // 12. Java 中的设计模式，Ref: http://blog.didispace.com/spring-design-partern/
 ```
 
+### Servlet
+
+**Ref of servlet**
+
+- [Servlet 工作原理解析](https://www.ibm.com/developerworks/cn/java/j-lo-servlet/index.html)
+- [Tomcat 系统架构与设计模式](https://www.ibm.com/developerworks/cn/java/j-lo-tomcat1/index.html)
+- [设计模式分析](https://www.ibm.com/developerworks/cn/java/j-lo-tomcat2/)
+- Servlet 规范
+
 
 ## Ref
 
+- [IBM Java 频道](https://www.ibm.com/developerworks/cn/java/)
 - [Java programming language](https://howtodoinjava.com/java/basics/what-is-java-programming-language/)
 - [Java 9](https://howtodoinjava.com/java9/java9-new-features-enhancements/)
 - [Java 10](https://howtodoinjava.com/java10/java10-features/)
