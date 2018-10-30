@@ -3,7 +3,33 @@
 
 对 Java 做一个全方位的总结，我觉得第一个不得不去认真思考的问题是对 Java 平台的理解，也就是我们需要刨根问底 Java 它到底是一个什么样的东西？拨开 Java 的各种表象后，它的本质是什么样子的？
 
-首先想到的是 Java 作为一门编程语言，他首先是编程语言，那编程语言的本质又是什么？是引发的第一个思考。之前有大致看过<<计算机程序的构造和解释>>一书
+### 语言本质的思考
+
+首先 Java 作为一门编程语言，他首先是编程语言，编程语言的本质是什么？是第一个思考的问题。之前有看过<<计算机程序的构造和解释>>一书, 
+
+// todo...
+
+### Java 基础
+
+// todo
+
+- 基本数据类型
+- equals and ==
+- Object 对象探索
+- Java 的四种引用及使用场景
+- HashCode
+- Java 的异常体系
+- Java 的多态实现
+- Java 的泛型
+- ...
+
+**Java 基础 Ref**
+
+- [Java SE Notes](https://github.com/francistao/LearningNotes/blob/master/Part2/JavaSE/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md)
+
+### Java 语言设计思想
+
+// todo
 
 ### Java 反射
 
@@ -26,6 +52,8 @@ The API accommodates applications that need access to either the public members 
 - 类加载的过程？
 - 什么是双亲委托，为什么需要它？
 - 如何自定义类加载器？什么时候需要自定义？
+
+### JVM 内存模型
 
 
 ```
