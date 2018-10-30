@@ -5,6 +5,19 @@
 
 首先想到的是 Java 作为一门编程语言，他首先是编程语言，那编程语言的本质又是什么？是引发的第一个思考。之前有大致看过<<计算机程序的构造和解释>>一书
 
+### Java 反射
+
+> Reflection enables Java code to discover information about the fields, methods and constructors of loaded classes, and to use reflected fields, methods, and constructors to operate on their underlying counterparts, within security restrictions.
+The API accommodates applications that need access to either the public members of a target object (based on its runtime class) or the members declared by a given class. It also allows programs to suppress default reflective access control.
+
+反射的核心是 JVM 在运行时才动态加载类或调用方法/访问属性，它不需要事先（写代码的时候或编译期）知道运行对象是谁。
+
+**Java Reflection**:
+
+- [深入解析Java反射（1） - 基础](https://www.sczyh30.com/posts/Java/java-reflection-1/)
+- [深入解析Java反射（2） - invoke方法](https://www.sczyh30.com/posts/Java/java-reflection-2/)
+- [using java reflection](https://www.oracle.com/technetwork/articles/java/javareflection-1536171.html)
+
 ### Java 的类加载和双亲委托
 
 主要去理解如下问题：
