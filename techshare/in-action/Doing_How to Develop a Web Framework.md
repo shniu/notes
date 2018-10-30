@@ -51,6 +51,8 @@ IoC 主要解决了解耦的问题，`借助于“第三方”实现具有依赖
 这是一个 [CDI](http://cdi-spec.org/) 的实现
 
 - [重读IOC：从DI到CDI](http://softlab.sdut.edu.cn/blog/subaochen/2013/06/%E9%87%8D%E8%AF%BBiocdi/)
+- [Spring IOC 容器源码分析](http://www.importnew.com/27469.html)
+- [The IoC container - Introduction to the Spring IoC container and beans](https://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/beans.html)
 
 ## Ref framework
 
