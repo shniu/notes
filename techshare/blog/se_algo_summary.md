@@ -1,6 +1,15 @@
 
 ## Algorithmic Summary
 
+### todo 资源
+
+- [大数问题](https://blog.csdn.net/walxiaosage/article/details/48251761)
+- 编程珠玑
+- 剑指offer
+- [2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记](https://github.com/imhuay/Algorithm_Interview_Notes-Chinese/tree/master/C-%E7%AE%97%E6%B3%95)
+- [leetcode](https://leetcode.com/discuss/interview-question/operating-system)
+- https://github.com/xuelangZF/LeetCode
+
 ### 如何高效的学习数据结构和算法
 
 - 理解什么是数据结构和算法
