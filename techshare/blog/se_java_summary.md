@@ -88,6 +88,13 @@ The API accommodates applications that need access to either the public members 
 - [设计模式分析](https://www.ibm.com/developerworks/cn/java/j-lo-tomcat2/)
 - Servlet 规范
 
+### 面试相关
+
+- [Vector vs. ArrayList](https://www.geeksforgeeks.org/vector-vs-arraylist-java/)
+
+1. Synchronization, Vector 是 synchronized，ArrayList 不是 synchronized
+2. 性能，ArrayList 更快，因为不需要加锁
+3. 数据扩容与缩容，ArrayList增长是50%，Vector是100%
 
 ## Ref
 
