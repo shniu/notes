@@ -14,9 +14,9 @@ public class ArrayTest {
     @Before
     public void setUp() throws Exception {
         integerArray = new Array<Integer>(10);
-        integerArray.insert(0, 11);
-        integerArray.insert(1, 13);
-        integerArray.insert(2, 15);
+        integerArray.addLast(11);
+        integerArray.addLast(13);
+        integerArray.addLast(15);
     }
 
     @After
@@ -31,14 +31,14 @@ public class ArrayTest {
 
     @Test
     public void delete() {
-        integerArray.delete(0);
-        assert integerArray.find(0) == 13;
+        integerArray.remove(0);
+        assert integerArray.find(13) == 0;
     }
 
     @Test
     public void find() throws Exception {
         System.out.println(integerArray);
-        assert integerArray.find(0) == 11;
+        assert integerArray.find(11) == 0;
     }
 
 }
