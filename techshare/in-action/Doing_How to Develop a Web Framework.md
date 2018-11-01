@@ -42,6 +42,8 @@ IoC 主要解决了解耦的问题，`借助于“第三方”实现具有依赖
 
 **IOC Ref**
 
+- [JSR 330](https://github.com/javax-inject/javax-inject)
+- [Google Guice](https://github.com/google/guice/wiki/JSR330)
 - [Java Dependency Injection – DI Design Pattern Example Tutorial](https://www.journaldev.com/2394/java-dependency-injection-design-pattern-example-tutorial)
 - [浅谈IOC--说清楚IOC是什么](https://www.cnblogs.com/DebugLZQ/archive/2013/06/05/3107957.html)
 - [深度理解依赖注入（Dependence Injection）](http://www.cnblogs.com/xingyukun/archive/2007/10/20/931331.html)
