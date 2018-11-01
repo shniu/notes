@@ -22,7 +22,23 @@ Java 语言的基本语法特性和编程方式，为我们提供了基本的表
 // todo
 
 - 基本数据类型
-- equals and ==
+- [equals and ==](http://www.importnew.com/6804.html)
+
+`==` 和 `equals` 是 Java 中比较相等的两种方式：
+
+```
+// ==
+1. == 用来比较基本数据类型之间的值是否相等，如short, int, long, char, float, double, byte, boolean
+2. == 也可以比较引用，在比较的时候判断的是他们的内存地址是否相同，如果内存地址不同，则返回 false
+
+// equals
+1. equals 是 Object 中的一个方法，最原始的实现是比较两个对象之间的内存地址是否相等，使用的是 `==`
+2. Java 中所有的对象都继承自 Objcet, 所以其他对象都是可以 Override equals 的，基于业务需求重写equals方法是最好的实践之一，无论什么时候你重写了equals方法，你同样要重写hashcode()方法
+3. String 重写 equals 和 HashCode 是一个非常好的例子，String 之间比较相等要使用 equals
+```
+
+- String 在 Java 中的实现
+
 - Object 对象探索
 - Java 的四种引用及使用场景
 - HashCode
