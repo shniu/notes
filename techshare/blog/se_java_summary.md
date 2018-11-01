@@ -112,6 +112,8 @@ The API accommodates applications that need access to either the public members 
 
 ## Ref
 
+- [Java 资源大全](http://www.cnblogs.com/jpfss/p/9888687.html)
+- [Awesome java](https://github.com/akullpp/awesome-java)
 - [IBM Java 频道](https://www.ibm.com/developerworks/cn/java/)
 - [Java programming language](https://howtodoinjava.com/java/basics/what-is-java-programming-language/)
 - [Java 9](https://howtodoinjava.com/java9/java9-new-features-enhancements/)
