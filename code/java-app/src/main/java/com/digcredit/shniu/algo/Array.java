@@ -41,11 +41,24 @@ public class Array<T> {
 
         rangeCheck(index);
 
-        for(int i = count; i > index; --i) {
+        for (int i = count; i > index; --i) {
             data[i] = data[i - 1];
         }
         data[index] = value;
         count++;
+        return true;
+    }
+
+    /**
+     * 根据索引，删除元素
+     */
+    public boolean delete(int index) {
+        rangeCheck(index);
+
+        for (int i = index; i < count; i++) {
+            data[i] = data[i + 1];
+        }
+        count--;
         return true;
     }
 
@@ -65,6 +78,6 @@ public class Array<T> {
     }
 
     private String outOfBoundsMsg(int index) {
-        return "Index: "+index+", Size: " + size;
+        return "Index: " + index + ", Size: " + size;
     }
 }
