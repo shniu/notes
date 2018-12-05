@@ -10,3 +10,8 @@ This is a document for translation.
 - [Microservices in golang part 5](Golang_microservices-in-golang-part-5.md)
 - [Singleton design pattern in go](Golang_Singleton-design-pattern-in-go.md)
 - [Using go as a scripting language](Golang_Using-go-as-a-scripting-language.md)
+
+### Kvs
+
+- [Amazon Dynamo](Kvs_Amazon-Dynamo-Intro.md)
+- [Bitcask Intro](Kvs_Bitcask-Intro.md)
