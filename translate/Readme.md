@@ -15,3 +15,7 @@ This is a document for translation.
 
 - [Amazon Dynamo](Kvs_Amazon-Dynamo-Intro.md)
 - [Bitcask Intro](Kvs_Bitcask-Intro.md)
+
+### Log structed
+
+- [The Log: What every software engineer should know about real-time data's unifying abstraction](The Log: What every software engineer should know about real-time data's unifying abstraction.md)
