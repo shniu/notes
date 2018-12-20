@@ -18,4 +18,4 @@ This is a document for translation.
 
 ### Log structed
 
-- [The Log: What every software engineer should know about real-time data's unifying abstraction](The Log: What every software engineer should know about real-time data's unifying abstraction.md)
+- [The Log: What every software engineer should know about real-time data's unifying abstraction](The%20Log:%20What%20every%20software%20engineer%20should%20know%20about%20real-time%20data's%20unifying%20abstraction.md)
