@@ -43,7 +43,11 @@ Java 语言的基本语法特性和编程方式，为我们提供了基本的表
 - Java 的异常体系
 - Java 的多态实现
 - Java 的泛型
-- ...
+
+- Java 中的 static 和全局区
+
+static 可用于修饰 block（静态代码块）, variable（类变量）, method（类方法）, nested class（内嵌类）.
+
 
 **Java 基础 Ref**
 
@@ -112,6 +116,8 @@ The API accommodates applications that need access to either the public members 
 
 ## Ref
 
+- [Java 资源大全](http://www.cnblogs.com/jpfss/p/9888687.html)
+- [Awesome java](https://github.com/akullpp/awesome-java)
 - [IBM Java 频道](https://www.ibm.com/developerworks/cn/java/)
 - [Java programming language](https://howtodoinjava.com/java/basics/what-is-java-programming-language/)
 - [Java 9](https://howtodoinjava.com/java9/java9-new-features-enhancements/)

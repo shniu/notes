@@ -5,3 +5,7 @@
 ## Notes guide
 
 - [For the learning resources awesome](resource-awesome.md)
+
+## Resource
+
+- https://github.com/in28minutes
