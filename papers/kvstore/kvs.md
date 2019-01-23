@@ -46,11 +46,35 @@ LSM Tree 论文是 96 年一帮人写的，很长，读起来有点费劲。
 
 论文太难，入门开[这个](http://www.open-open.com/lib/view/open1424916275249.html)，英文版的出处在[这里](http://www.benstopford.com/2015/02/14/log-structured-merge-trees/)
 
+然后就是 [wiki](https://en.wikipedia.org/wiki/Log-structured_merge-tree), [Leveled Compaction in Apache Cassandra](https://www.datastax.com/dev/blog/leveled-compaction-in-apache-cassandra)
+
+Log-Structured Merge Tree, 一般理解上应该是一种算法设计思想，描述了如何解决大数据下的快速随机读写访问；首先设计之初就考虑借助磁盘顺序读写的高性能（相比于磁盘的随机读写，几个数量及上的差距，不管是SSD还是普通磁盘），利用这个优势；然后解决快速读写的问题，高效写入借助内存表memTable, 将最近写入的热数据放在内存中，只写内存，为了应对突发状况使用 WAL，内存表是有序的，一般可以使用 SkipList 实现，然后通过两次 Compacation 将内存中的数据 flush 到磁盘中，形成一个个的 SSTable 文件，Compacation 的操作是在满足特定条件后触发在后台默默完成的；最后就是高效读操作，每个 SSTable 文件都会有一个常驻内存的索引，使用索引来快速定位数据，当然为了应对性能下降，引入了布隆过滤器，可以提升一定的读性能。这就是 LSM 的基本思想。
+
+原理相对来讲比较简单，但是要实现一个这样的存储引擎并非容易的事情。目前使用 LSM Tree 的设计思想实现的数据存储有： Bigtable, HBase, LevelDB, MongoDB, SQLite4, Tarantool, RocksDB, WiredTiger, Apache Cassandra, and InfluxDB
+
 郑老师写了几篇文章对 LSM Tree 做了分析：
 1. [LSM-tree存储引擎的优化研究成果总结(1)](https://mp.weixin.qq.com/s/uUFeK2ptyG7r8Fnmsry3Sw)
 2. [LSM-tree存储引擎的优化研究成果总结(2) -- 关于索引空间的优化](https://mp.weixin.qq.com/s/hQomSlxzzPn9pNmqCxMO3g)
 3. [LSM-tree存储引擎的优化研究成果总结(3) -- 架构的优化](https://mp.weixin.qq.com/s/8mRo94B-UAnSfYqvlw5rjg)
 
+- RocksDB
+
+RocksDB 是一个基于 LevelDB 开发的内嵌数据库引擎，可以快速读写访问。
+
+1. [Wiki](https://en.wikipedia.org/wiki/RocksDB) 里有丰富的资源。
+2. [RocksDB Github](https://github.com/facebook/rocksdb)
+3. [RocksDB's wiki](https://github.com/facebook/rocksdb/wiki)
+4. [获得PCC性能大赛背后的RocksDB引擎:5分钟全面了解其原理](https://sdk.cn/news/6686)
+
+- CockroachDB
+
+1. [Github](https://github.com/cockroachdb/cockroach)  Go 语言实现
+2. https://www.cockroachlabs.com
+3. 膜拜一下[设计](https://github.com/cockroachdb/cockroach/blob/master/docs/design.md)
+4. [中文社区](http://www.cockroachchina.cn/)
+5. http://www.cockroachchina.cn/?p=1242
+
+- Cassandra
 
 - [Data Structures and Algorithms for Big Databases](https://people.csail.mit.edu/bradley/BenderKuszmaul-tutorial-xldb12.pdf)
 
