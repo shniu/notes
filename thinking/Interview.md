@@ -4,6 +4,10 @@
 
 整理网上一些存在的面试相关的资料
 
+#### 面试题
+
+- [设计key-value数据的存储查询模块](http://www.open-open.com/lib/view/open1346511540178.html)
+
 #### 算法类的
 
 - [算法/深度学习/NLP面试笔记](https://github.com/imhuay/Algorithm_Interview_Notes-Chinese)
