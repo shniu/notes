@@ -52,3 +52,4 @@ Todo. 非常好的一篇总结性文章，涵盖了大数据领域的几乎所�
 - [阿里中间件团队博客](http://jm.taobao.org/)
 - [淘宝数据库内核月报，开发 AliSQL 的团队](http://mysql.taobao.org/monthly/)
 - [Cloudera blog](https://blog.cloudera.com/)
+- [Oceanbase列传](http://oceanbase.org.cn/)  值得读一下
