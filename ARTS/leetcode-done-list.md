@@ -26,3 +26,14 @@
 - [#394. 字符串解码](https://leetcode-cn.com/problems/decode-string)
 
 2019.8.27 完成第一遍，使用 Java 实现
+
+- [#146. LRU缓存机制](https://leetcode-cn.com/problems/lru-cache/)
+
+2019.8.28 完成第一遍，使用 Java 实现
+
+### 算法与数据结构编程练习
+
+| 题目编号 | 题目 | 首次时间 | 二刷 | 周刷 | 月刷 |
+| :-----: | :----: | :----: | :----: | :----: | :----: |
+| #1 | [#1 两数之和](https://leetcode-cn.com/problems/two-sum/) | 2019.8.18(Java) | 2019.8.20(Golang) | TODO | TODO | 
+| #20 | [#20 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) | 2019.8.20(Java) | 2019.8.27(Golang) | TODO | TODO |
