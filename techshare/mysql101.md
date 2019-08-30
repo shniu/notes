@@ -1,6 +1,14 @@
 
 ## MySQL 101
 
+### 启动相关
+
+- debug 模式启动 mysql
+
+```
+mysqld --debug --console &
+```
+
 ### 连接相关
 
 #### 常用命令
