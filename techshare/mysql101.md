@@ -1,5 +1,5 @@
 
-## MySQL
+## MySQL 101
 
 ### 连接相关
 
@@ -31,6 +31,81 @@ select concat('kill ', id, ';') from information_schema.processlist where Comman
 - https://zhuanlan.zhihu.com/p/30743094
 - [Thread state](https://dev.mysql.com/doc/refman/5.6/en/general-thread-states.html)
 - https://dev.mysql.com/doc/refman/5.6/en/thread-commands.html
+
+### 事务相关
+
+#### 常用命令
+
+- 查询隔离级别
+
+```
+// 查询全局隔离界别
+select @@global.tx_isolation;
+
+// 当前sessin
+select @@tx_isolation;
+select @@session.tx_isolation;
+
+// 设置全局隔离级别
+set global transaction isolation level read committed;
+
+// 设置会话级别隔离级别
+set session transaction isolation level read committed;
+```
+
+不同的事务隔离级别的表现是不同的：
+1. 读未提交
+2. 读提交
+3. 可重复读
+4. 串行化
+
+在验证不同隔离级别的行为时，可以使用mysql开启两个连接，并手动开启事务。
+
+- 事务自动提交
+
+```
+// 查看是否自动提交事务
+select @@autocommit;
+
+// 关闭自动提交事务
+set autocommit = 0;
+
+// 开启自动提交
+set autocommit = 1;
+```
+
+- 事务控制
+
+```
+// 开启事务
+start transaction;
+// or
+begin;
+select * from t1;
+insert into t1 values (1, 'test');
+select * from t1;
+rollback;
+commit;
+select * from t1;
+```
+
+- 保存点 savepoint
+
+一个事务中可以创建多个保存点，保存点用于记录事务中的关键时刻
+
+```
+begin;
+select * from departments;
+insert into departments values ('111', 'test');
+select * from departments;
+savepoint tx1;
+insert into departments values ('111', 'test');
+select * from departments;
+rollback tx1;
+select * from departments;
+commit;
+select * from departments;
+```
 
 
 ### redo log 相关
