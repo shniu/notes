@@ -1,6 +1,6 @@
 
 
-将资源的汇总改造成其他方式，使用新的知识图谱的方式进行知识管理
+## shniu's Github Repository Awesome
 
 ### 基本功 - 操作系统
 
@@ -12,9 +12,8 @@
 | [How to create an OS from scratch](https://github.com/cfenollosa/os-tutorial) | [x] todo | | |
 | [ops](https://www.ops-class.org/) | [√] doing |  |  |
 
----
 
-## Github 优秀项目汇总
+### Github 优秀项目汇总
 
 将 Github 上优秀的项目汇总在一起，方便学习及查阅，温故知新而知新。
 
