@@ -108,7 +108,6 @@ Intelligent object mapping, 在对象拷贝时很有用，值得研究。
 
 DDD 的经典书籍, 结合真实的项目和应用案例，阐述了如何将 DDD 应用到实际的业务问题中。
 
-
 - [Container Networking - From Docker to Kubernetes](https://12kbps.xyz/repo/Container-Networking-Docker-Kubernetes.pdf)
 - [SRE Google 运维解密](https://book.douban.com/subject/26875239/)
 - DevOps相关，[凤凰项目, 一个IT运维的传奇故事](https://e.jd.com/30410303.html)
