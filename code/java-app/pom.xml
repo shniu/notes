@@ -14,7 +14,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <mahout.version>0.9</mahout.version>
     <hadoop.core.version>1.2.1</hadoop.core.version>
-    <hadoop.version>2.7.3</hadoop.version>
+    <hadoop.version>3.2.3</hadoop.version>
   </properties>
 
   <dependencies>
